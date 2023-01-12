@@ -6,6 +6,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 export default function HomeScreen() {
   const navigation = useNavigation()
@@ -73,9 +74,30 @@ export default function HomeScreen() {
 
       >
         {/* category's */}
-        <Categories/>
+        <Categories />
 
         {/* Featured Rows */}
+        <FeaturedRow
+          id="327443"
+          title="Featured Restaurants"
+          description="Explore the best restaurants in your area"
+          featuredCategory="featured"
+        />
+
+        {/* Tasty Discount */}
+        <FeaturedRow
+          id="326452"
+          title="Tasty Discounts"
+          description="Everyone's been enjoying these juicy discounts!"
+          featuredCategory="featured"
+        />
+        {/* Featured Rows */}
+        <FeaturedRow
+          id="342522"
+          title="Offer near you!"
+          description="Why not support your local restaurant tonight"
+          featuredCategory="offers"
+        />
       </ScrollView>
 
     </SafeAreaView>
