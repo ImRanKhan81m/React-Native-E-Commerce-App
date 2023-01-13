@@ -97,7 +97,7 @@ export default function HomeScreen() {
           featuredCategory="featured"
         />
 
-        {/* Featured Rowss */}
+        {/* Featured Rows */}
         <FeaturedRow
           id="342522"
           title="Offer near you!"
