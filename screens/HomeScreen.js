@@ -89,7 +89,7 @@ export default function HomeScreen() {
         />
 
 
-        {/* Tasty Discounts */}
+        {/* Tasty Discount */}
         <FeaturedRow
           id="326452"
           title="Tasty Discounts"
@@ -97,7 +97,7 @@ export default function HomeScreen() {
           featuredCategory="featured"
         />
 
-        {/* Featured Rows */}
+        {/* Featured Rowss */}
         <FeaturedRow
           id="342522"
           title="Offer near you!"
