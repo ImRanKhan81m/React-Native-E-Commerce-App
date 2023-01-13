@@ -74,11 +74,11 @@ export default function HomeScreen() {
       </View>
 
       {/* Body */}
-      <ScrollView className="bg-gray-100 "
+      <ScrollView className="bg-gray-100 " >
 
-      >
         {/* category's */}
         <Categories />
+
 
         {/* Featured Rows */}
         <FeaturedRow
@@ -88,13 +88,15 @@ export default function HomeScreen() {
           featuredCategory="featured"
         />
 
-        {/* Tasty Discount */}
+
+        {/* Tasty Discounts */}
         <FeaturedRow
           id="326452"
           title="Tasty Discounts"
           description="Everyone's been enjoying these juicy discounts!"
           featuredCategory="featured"
         />
+
         {/* Featured Rows */}
         <FeaturedRow
           id="342522"
