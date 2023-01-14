@@ -90,7 +90,7 @@ export default function HomeScreen() {
         />
 
 
-        {/* Tasty Discount */}
+        {/* Tasty Discounts */}
         <FeaturedRow
           id="326452"
           title="Tasty Discounts"
