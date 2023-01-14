@@ -89,7 +89,6 @@ export default function HomeScreen() {
           featuredCategory="featured"
         />
 
-
         {/* Tasty Discounts */}
         <FeaturedRow
           id="326452"
