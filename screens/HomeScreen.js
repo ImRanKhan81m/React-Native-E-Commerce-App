@@ -72,6 +72,7 @@ export default function HomeScreen() {
           color="#00CCBB"
         />
       </View>
+      
 
       {/* Body */}
       <ScrollView className="bg-gray-100 " >
