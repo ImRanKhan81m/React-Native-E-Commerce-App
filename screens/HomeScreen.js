@@ -17,94 +17,92 @@ export default function HomeScreen() {
     })
   }, [])
 
-  // 
 
 
+return (
+  <SafeAreaView className="bg-white pt-3">
 
-  return (
-    <SafeAreaView className="bg-white pt-3">
-
-      {/* Header Section */}
-      <View>
-        <View className="flex-row pb-3 items-center mx-4 space-x-2">
-          <Image
-            source={{
-              uri: "https://links.papareact.com/wru"
-            }}
-            className="h-7 w-7 bg-gray-300 p-4 rounded-full"
-          />
-          <View className="flex-1">
-            <Text className="font-bold text-gray-400 text-xs"> Deliver Now!</Text>
-            <Text className="font-bold text-xl"> Current Location
-              <Ionicons
-                name="chevron-down"
-                size={20}
-                color="#00CCBB"
-              />
-            </Text>
-          </View>
-          <View>
-            <FontAwesome
-              name="user-o"
+    {/* Header Section */}
+    <View>
+      <View className="flex-row pb-3 items-center mx-4 space-x-2">
+        <Image
+          source={{
+            uri: "https://links.papareact.com/wru"
+          }}
+          className="h-7 w-7 bg-gray-300 p-4 rounded-full"
+        />
+        <View className="flex-1">
+          <Text className="font-bold text-gray-400 text-xs"> Deliver Now!</Text>
+          <Text className="font-bold text-xl"> Current Location
+            <Ionicons
+              name="chevron-down"
               size={20}
               color="#00CCBB"
             />
-          </View>
+          </Text>
         </View>
-      </View>
-
-      {/* Search Bar */}
-      <View className="flex-row items-center space-x-2 pb-2 mx-4">
-        <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3 items-center rounded">
+        <View>
           <FontAwesome
-            name="search"
+            name="user-o"
             size={20}
-            color="gray"
-          />
-          <TextInput
-            placeholder='Restaurants and cuisines'
-            keyboardType='default'
+            color="#00CCBB"
           />
         </View>
-        <Entypo
-          name="sound-mix"
+      </View>
+    </View>
+
+    {/* Search Bar */}
+    <View className="flex-row items-center space-x-2 pb-2 mx-4">
+      <View className="flex-row space-x-2 flex-1 bg-gray-200 p-3 items-center rounded">
+        <FontAwesome
+          name="search"
           size={20}
-          color="#00CCBB"
+          color="gray"
+        />
+        <TextInput
+          placeholder='Restaurants and cuisines'
+          keyboardType='default'
         />
       </View>
+      <Entypo
+        name="sound-mix"
+        size={20}
+        color="#00CCBB"
+      />
+    </View>
 
-      {/* Body */}
-      <ScrollView className="bg-gray-100 " >
+    {/* Body */}
+    <ScrollView className="bg-gray-100 " >
 
-        {/* category's */}
-        <Categories />
+      {/* category's */}
+      <Categories />
 
 
-        {/* Featured Rows */}
-        <FeaturedRow
-          id="327443"
-          title="Featured Restaurants"
-          description="Explore the best restaurants in your area"
-          featuredCategory="featured"
-        />
+      {/* Featured Rows */}
+      <FeaturedRow
+        id="327443"
+        title="Featured Restaurants"
+        description="Explore the best restaurants in your area"
+        featuredCategory="featured"
+      />
 
-        {/* Tasty Discounts */}
-        <FeaturedRow
-          id="326452"
-          title="Tasty Discounts"
-          description="Everyone's been enjoying these juicy discounts!"
-          featuredCategory="featured"
-        />
+      {/* Tasty Discounts */}
+      <FeaturedRow
+        id="326452"
+        title="Tasty Discounts"
+        description="Everyone's been enjoying these juicy discounts!"
+        featuredCategory="featured"
+      />
 
-        {/* Featured Rows */}
-        <FeaturedRow
-          id="342522"
-          title="Offer near you!"
-          description="Why not support your local restaurant tonight"
-          featuredCategory="offers"
-        />
-      </ScrollView>
+      {/* Featured Rows */}
+      <FeaturedRow
+        id="342522"
+        title="Offer near you!"
+        description="Why not support your local restaurant tonight"
+        featuredCategory="offers"
+      />
+    </ScrollView>
 
-    </SafeAreaView>
-  )
+  </SafeAreaView>
+)
 }
