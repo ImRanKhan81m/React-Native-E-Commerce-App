@@ -17,7 +17,6 @@ export default function HomeScreen() {
     })
   }, [])
 
-  
 
 return (
   <SafeAreaView className="bg-white pt-3">
